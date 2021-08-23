@@ -1,36 +1,38 @@
 {
-  "name": "astra-setup",
-  "version": "0.1.20",
-  "description": "Netlify Build plugin - This plugin connects your netlify instance to an Astra database backend, including a managed Cassandra database and HTTP APIs through Stargate.",
-  "main": "src/astra-setup.js",
+  "name": "astra-graphql-helper",
+  "version": "0.0.1",
+  "description": "Astra-GraphQL-Helper - tool to help with set graphql calls",
+  "main": "src/astra-graphql-helper.js",
   "files": [
-    "src/astra-setup.js"
+    "src/astra-graphql-helper.js"
   ],
-  "bin": "src/astra-setup.js",
+  "bin": "src/astra-graphql-helper.js",
   "keywords": [
     "astra"
   ],
   "scripts": {
-    "astra-setup": "src/astra-setup.js"
+    "astra-setup": "src/astra-graphql-helper.js"
   },
   "author": "synedra <kirsten.hunter@datastax.com>",
   "license": "Apache-2.0",
-  "repository": "//github.com/synedra/astra-setup",
-  "bugs": "//github.com/synedra/astra-setup",
+  "repository": "//github.com/synedra/astra-graphql-helper",
+  "bugs": "//github.com/synedra/astra-graphql-helper",
   "engines": {
     "node": ">=12.18.0"
   },
   "dependencies": {
-    "@astrajs/collections": "^0.0.13",
     "@astrajs/rest": "^0.0.13",
-    "astra-setup": "^0.1.10",
+    "astra-graphql-helper": "^0.0.1",
+    "astra-setup": "^0.1.20",
     "chalk": "^4.1.1",
     "configparser": "^0.3.9",
     "dotenv": "^8.2.0",
+    "graphql": "^15.5.1",
     "node-jq": "^1.12.0",
     "npm": "^7.12.0",
     "parsenv": "^1.0.2",
     "prompts": "^2.4.1",
-    "readline": "^1.3.0"
+    "readline": "^1.3.0",
+    "yargs": "^17.1.0"
   }
 }
